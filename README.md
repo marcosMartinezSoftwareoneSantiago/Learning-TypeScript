@@ -25,7 +25,7 @@ Imprime en una estructura de lista desordenada de html los nombres y preferencia
 # Ejercicio 6
 Crea una aplicación que a través de ventanas prompt() pida al usuario su nombre, primer apellido e email. Pasa estos tres valores como argumentos a una función que no devuelva nada ( sin retorno ) e imprime los tres datos concatenados en el navegador a través de una etiqueta de párrafo.
 
-# Ejercico 7
+# Ejercicio 7
 Crea una aplicación con javascript que tenga una función para calcular el salario de los empleados de la empresa. Dicho salario se calcula con la siguiente fórmula:
 
 salario = sueldo bruto - (irpf + ss)
