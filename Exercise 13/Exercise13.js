@@ -22,11 +22,11 @@ function emptyFieldValidator(field) {
     return field.length === 0;
 }
 function notAnumberValidator(field) {
-    let tieneNumeros = false;
+    let noTieneNumeros = true;
     for (let i = 0; i < field.length; i++) {
         if (field.charAt(i) === '1' || field.charAt(i) === '2' || field.charAt(i) === '3' || field.charAt(i) === '4' || field.charAt(i) === '5' || field.charAt(i) === '6' || field.charAt(i) === '7' || field.charAt(i) === '8' || field.charAt(i) === '9' || field.charAt(i) === '0') {
-            tieneNumeros = true;
+            noTieneNumeros = false;
         }
     }
-    return !tieneNumeros;
+    return noTieneNumeros;
 }
