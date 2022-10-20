@@ -20,7 +20,7 @@ Crea una aplicación con typescript. Declara un tipo enum con tres valores posib
 
 BLANCO, NEGRO Y ROJO. Declara un array con dos objetos donde una clave para el primer objeto sea preferencias y el valor alguno de los posibles valores del enumerado y la otra un nombre con algún valor cualquiera y la clave para el segundo objetos sea también preferencias con alguno de los posibles valores del enumerado y otra clave sea el nombre con algún valor que tu quieras.
 
-Imprime en una estructura de lista desordenada de html los nombres y preferencias de los dos usuarios
+    Imprime en una estructura de lista desordenada de html los nombres y preferencias de los dos usuarios
 
 # Ejercicio 6
 Crea una aplicación que a través de ventanas prompt() pida al usuario su nombre, primer apellido e email. Pasa estos tres valores como argumentos a una función que no devuelva nada ( sin retorno ) e imprime los tres datos concatenados en el navegador a través de una etiqueta de párrafo.
@@ -28,22 +28,19 @@ Crea una aplicación que a través de ventanas prompt() pida al usuario su nombr
 # Ejercicio 7
 Crea una aplicación con javascript que tenga una función para calcular el salario de los empleados de la empresa. Dicho salario se calcula con la siguiente fórmula:
 
-salario = sueldo bruto - (irpf + ss)
+    salario = sueldo bruto - (irpf + ss)
 
 El irpf y el descuento de las cuotas a la seguridad social son porcentajes que han de restarse al sueldo bruto. tanto el sueldo bruto como los % ha descontar han de introducirse a través de una ventana prompt(). La fórmula para el cálculo deben de crearse a través de una función que tenga como parámetros el sueldo bruto, el irpf y los descuentos relacionados con los pagos de cuotas a la seguridad social y devuelva el salario.
 
-Imprime el salario del empleado en el navegador ( puedes usar document.write() )
-
-(No tienes porque usar el 100% de typescript, úsalo en la medida de lo posible)
+    Imprime el salario del empleado en el navegador ( puedes usar document.write() )
+    (No tienes porque usar el 100% de typescript, úsalo en la medida de lo posible)
 
 # Ejercicio 8
 Crea una aplicación con typescript donde uses un tipo de dato literal ( un tipo creado por ti) que sea tipo 'device' con tres posibles valores 'mobile', 'desktop' u 'labtop' .
 
-Crea un array de personas que tenga dos objetos con claves 'username', 'email' y 'device'.
-
-Los valores asociados a esas claves te los puedes inventar a excepción de la clase device que va a ser de tipo 'device' por lo tanto solo va a poder tener tres valores posibles ('mobile', 'desktop' o 'labtop').
-
-Crea una función que sirva para imprimir los datos de los dos usuarios (los dos objetos) en el navegador.
+    Crea un array de personas que tenga dos objetos con claves 'username', 'email' y 'device'.
+    Los valores asociados a esas claves te los puedes inventar a excepción de la clase device que va a ser de tipo 'device' por lo tanto solo va a poder tener tres valores posibles ('mobile', 'desktop' o 'labtop').
+    Crea una función que sirva para imprimir los datos de los dos usuarios (los dos objetos) en el navegador.
 
 # Ejercicio 9
 Crea un formulario html donde tengas dos inputs para introducir un número en cada uno. Obtén los valores de los números y , usando typescript, genera un evento que cuando sea enviado el formulario capture los valores de los inputs y envíe en un alert la suma.
@@ -60,9 +57,26 @@ Crea un proyecto con typescript donde en el html tengas un botón que llame a un
 # Ejercicio 13
 Crea una aplicación con typescript que valide un campo username dentro de un formulario de tal modo que si el usuario no introduce nada en ese campo y presiona el botón de enviar en el formulario, aparezca una ventana emergente con el texto "El campo username es obligatorio" y si introduce un número en vez de un texto "El campo username no puede ser un número"
 
-Para la funcionalidad de validar que el campo no esté vacío crearás una arrow function "emptyFieldValidator"  y para la validación de campo no numérico otra llamada "notANumberValidator"
+    Para la funcionalidad de validar que el campo no esté vacío crearás una arrow function "emptyFieldValidator"  y para la validación de campo no numérico otra llamada "notANumberValidator"
 
 # Ejercicio 14
 Crea un proyecto con typescript que tenga un formulario donde a través de un input se pueda introducir y enviar texto. Crea un evento "keyup" (al soltar una tecla), que vaya imprimiendo el texto que se va introduciendo en la caja de texto dentro de otro elemento html un div situado debajo del formulario.
 
-(Para incrustar texto puedes utilizar la función de javascript textContent o bien innerHTML)
+    (Para incrustar texto puedes utilizar la función de javascript textContent o bien innerHTML)
+
+# Ejercicio 15
+Crea un proyecto con typescript en el que tengas un formulario que permita agregar nombres a través de un campo de texto y un botón.
+
+Cada vez que se presione en el botón del formulario para agregar nombres, se añadirán a un array, que un principio estará vacío.
+
+El formulario solo debería dejar agregar tres nombres. Cuando añadas el tercer nombre la aplicación debería lanzar una ventana emergente con el texto "Ya ha agregado tres nombres". Si se hace click en el botón de aceptar de la ventana emergente, la aplicación debería imprimir por consola los tres nombres de array.
+
+# Ejercicio 16
+
+Crea una proyecto con typescript en el que tengas tres nombres en un array. Muestra esos tres nombres en una estructura de lista desordenada (recorre el array con un bucle). En la interfaz de usuario además de los tres nombres debería existir un botón que al presionarlo eliminase a uno de los nombres de la lista y mostrase de nuevo la lista sin el elemento eliminado.
+
+# Ejercicio 17
+
+Crea un proyecto con typescript que tenga una interfaz ITaller la cual tendrá tres propiedades (cantidad, diametro y peso) y un método que sirva para agregar piezas con esas tres características.
+
+    Crea un objeto del tipo de la interfaz que cree una pieza de los datos obtenidos a través de un formulario e imprima dicha pieza por consola
