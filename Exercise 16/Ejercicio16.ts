@@ -1,26 +1,22 @@
 let names:string[] = ["Carlos", "Helena", "Samuel"];
+const primerDiv:HTMLDivElement = document.querySelector('#primer')!;
+const segundoDiv:HTMLDivElement = document.querySelector('#segundo')!;
+const boton:HTMLButtonElement = document.querySelector('#borrar')!;
 
-escribirArrayCompleto();
-borrarUnElemento();
+escribirArrayCompleto(primerDiv);
 
-function escribirArrayCompleto():void{
+boton.addEventListener("click", () => {
+    names.pop();
+    escribirArrayCompleto(segundoDiv);
+})
+
+function escribirArrayCompleto(div:HTMLDivElement):void{
     let texto:string = nombresCompletos();
-    texto += "<button type='submit' id='borrar'>Borrar un elemento</button>";
-    document.write(texto);
+    div.innerHTML=texto;
 }
-
-function borrarUnElemento():void{
-    const boton:HTMLButtonElement = document.querySelector('#borrar')!;
-
-    boton.addEventListener("submit", () => {
-        names.pop();
-        escribirArrayCompleto();
-    })
-}
-
 
 function nombresCompletos():string{
-    let codigo:string = '<ul>'
+    let codigo:string = '<ul>';
     names.forEach(name => {
         codigo+=`<li>${name}</li>`;
     });

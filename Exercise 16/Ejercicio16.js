@@ -1,18 +1,16 @@
 "use strict";
 let names = ["Carlos", "Helena", "Samuel"];
-escribirArrayCompleto();
-borrarUnElemento();
-function escribirArrayCompleto() {
+const primerDiv = document.querySelector('#primer');
+const segundoDiv = document.querySelector('#segundo');
+const boton = document.querySelector('#borrar');
+escribirArrayCompleto(primerDiv);
+boton.addEventListener("click", () => {
+    names.pop();
+    escribirArrayCompleto(segundoDiv);
+});
+function escribirArrayCompleto(div) {
     let texto = nombresCompletos();
-    texto += "<button type='submit' id='borrar'>Borrar un elemento</button>";
-    document.write(texto);
-}
-function borrarUnElemento() {
-    const boton = document.querySelector('#borrar');
-    boton.addEventListener("submit", () => {
-        names.pop();
-        escribirArrayCompleto();
-    });
+    div.innerHTML = texto;
 }
 function nombresCompletos() {
     let codigo = '<ul>';
