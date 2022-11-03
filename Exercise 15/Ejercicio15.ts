@@ -1,13 +1,12 @@
 const formularioIntroduccion:HTMLFormElement = document.querySelector('form')!;
 const textoIntroducido:HTMLInputElement = document.querySelector('#introducir')!;
-let nombres:string[];
+let nombres:string[] = [''];
 
 formularioIntroduccion.addEventListener("submit", ()=>{
     let nuevoNombre:string = textoIntroducido.value;
+    let dimensionNombres = nombres.push(nuevoNombre);
 
-    if((nombres == null || nombres.length <= 3)){
-        nombres.push(nuevoNombre);
-    }else{
+    if(dimensionNombres > 3){
         aviso();
     }
 

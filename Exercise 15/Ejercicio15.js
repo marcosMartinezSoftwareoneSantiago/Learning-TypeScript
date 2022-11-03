@@ -1,13 +1,11 @@
 "use strict";
 const formularioIntroduccion = document.querySelector('form');
 const textoIntroducido = document.querySelector('#introducir');
-let nombres;
+let nombres = [''];
 formularioIntroduccion.addEventListener("submit", () => {
     let nuevoNombre = textoIntroducido.value;
-    if ((nombres == null || nombres.length <= 3)) {
-        nombres.push(nuevoNombre);
-    }
-    else {
+    let dimensionNombres = nombres.push(nuevoNombre);
+    if (dimensionNombres > 3) {
         aviso();
     }
 });
